@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Set the application name. -->
-    <string name="app_name">p03-quizapp</string>
+    <string name="app_name">Android Quiz</string>
 
     <!-- Title string. -->
     <string name="title_quiz">Android Quiz</string>

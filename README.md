@@ -6,7 +6,7 @@
   # About
   Objective: design and implement a short quiz app about some topic you are familiar with.
 
-<img src="https://i.imgur.com/VdSG7bn.png" width="310" height="530">
+<img src="https://i.imgur.com/AMER3Yy.png">
 
 ## Resources used in this project
 
