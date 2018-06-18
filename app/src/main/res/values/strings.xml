@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Set the application name. -->
+    <string name="app_name">p03-quizapp</string>
+
+    <!-- Title string. -->
+    <string name="title_quiz">Android Quiz</string>
+
+    <!-- CheckBoxes string. -->
+    <string name="check_box_question">Which of the following is true about Android:</string>
+    <string name="check_box_first_answer">It is a mobile OS developed by Google.</string>
+    <string name="check_box_second_answer">It was intitially developed by Android Inc.</string>
+    <string name="check_box_third_answer">The 4.4 OS version has the code name Snickers.</string>
+
+    <!-- RadioGroup question string -->
+    <string name="radio_group_question">Which image represents an Android mascot?</string>
+
+    <!-- EditTexts string. -->
+    <string name="edit_text_first_question">What was the initial release year of Android 1.0 SDK?</string>
+    <string name="edit_text_second_question">What API level does Marshmallow have?</string>
+    <string name="edit_text_hint_answer">Answer</string>
+
+    <!-- Result button string. -->
+    <string name="button_result_text">Result</string>
+
+    <!-- Toast strings for the onClick method.  -->
+    <string name="toast_check_box_answer_one">This could be right, but I can\'t say for sure.</string>
+    <string name="toast_check_box_answer_two">Wow! That seems right. Hmm... no maybe I\'m wrong.</string>
+    <string name="toast_check_box_answer_three">If you get this wrong, you can try again!</string>
+    <string name="toast_radio_answer_one">You picked my favorite color!</string>
+    <string name="toast_radio_answer_two">I wish I could answer this for you.</string>
+    <string name="toast_radio_answer_three">It\'s a Bird... It\'s a Plane... It\'s...</string>
+
+    <!-- Toast strings for the displayResult method.  -->
+    <string name="toast_zero_points_first">You get\u0020</string>
+    <string name="toast_zero_points_second">\u0020points! Oh no... there must be a mistake.</string>
+    <string name="toast_one_point_first">You\'re getting somewhere!\u0020</string>
+    <string name="toast_one_point_second">\u0020point!</string>
+    <string name="toast_two_points">One plus one equals two! Your score is\u0020</string>
+    <string name="toast_three_points">\u0020points! Strikeout! Wait, sorry that\'s the wrong game.</string>
+    <string name="toast_four_points_first">You have a maximum score of\u0020</string>
+    <string name="toast_four_points_second">\u0020points! You can pester people with your Android knowledge now!</string>
+
+</resources>

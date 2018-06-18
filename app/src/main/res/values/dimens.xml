@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text sizes. -->
+    <dimen name="textsize_big">24dp</dimen>
+    <dimen name="textsize_large">20dp</dimen>
+    <dimen name="textsize_medium">16dp</dimen>
+
+    <!-- Typical spacing between two views. -->
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+</resources>
