@@ -31,14 +31,16 @@
     <string name="toast_radio_answer_two">I wish I could answer this for you.</string>
     <string name="toast_radio_answer_three">It\'s a Bird... It\'s a Plane... It\'s...</string>
 
+    <!-- Strings for the submitResult method -->
+    <string name="edit_text_answer_one_correct">2008</string>
+    <string name="edit_text_answer_two_correct">23</string>
+
     <!-- Toast strings for the displayResult method.  -->
-    <string name="toast_zero_points_first">You get\u0020</string>
-    <string name="toast_zero_points_second">\u0020points! Oh no... there must be a mistake.</string>
-    <string name="toast_one_point_first">You\'re getting somewhere!\u0020</string>
-    <string name="toast_one_point_second">\u0020point!</string>
-    <string name="toast_two_points">One plus one equals two! Your score is\u0020</string>
-    <string name="toast_three_points">\u0020points! Strikeout! Wait, sorry that\'s the wrong game.</string>
-    <string name="toast_four_points_first">You have a maximum score of\u0020</string>
-    <string name="toast_four_points_second">\u0020points! You can pester people with your Android knowledge now!</string>
+    <string name="toast_zero_points">You get %d points! Oh no... there must be a mistake.</string>
+    <string name="toast_one_point">You\'re getting somewhere! %d point!</string>
+    <string name="toast_two_points">One plus one equals two! Your score is %d!</string>
+    <string name="toast_three_points">%d points! Strikeout! Wait, sorry that\'s the wrong game.</string>
+    <string name="toast_four_points">You have a maximum score of %d points! You can pester people with your Android knowledge now!</string>
+
 
 </resources>

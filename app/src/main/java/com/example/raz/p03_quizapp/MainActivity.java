@@ -14,8 +14,8 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    CheckBox checkBoxOne, checkBoxTwo, checkBoxThree;
-    RadioButton radioButtonOne, radioButtonTwo, radioButtonThree;
+    private CheckBox checkBoxOne, checkBoxTwo, checkBoxThree;
+    private RadioButton radioButtonOne, radioButtonTwo, radioButtonThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,32 +44,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.check_box_answer_one:
                 if (checkBoxOne.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_check_box_answer_one, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.check_box_answer_two:
                 if (checkBoxTwo.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_check_box_answer_two, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.check_box_answer_three:
                 if (checkBoxThree.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_check_box_answer_three, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radio_answer_one:
                 if (radioButtonOne.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_radio_answer_one, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radio_answer_two:
                 if (radioButtonTwo.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_radio_answer_two, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.radio_answer_three:
                 if (radioButtonThree.isChecked())
-                    Toast.makeText(getApplicationContext(),
+                    Toast.makeText(this,
                             R.string.toast_radio_answer_three, Toast.LENGTH_SHORT).show();
                 break;
         }
@@ -79,29 +79,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * This method gets the rights answers and displays a toast with the results.
      */
     public void submitResult(View view) {
-        CheckBox checkBoxAnswerOne = findViewById(R.id.check_box_answer_one);
+        CheckBox checkBoxAnswerOne = checkBoxOne;
         boolean checkBoxAnswerFirst = checkBoxAnswerOne.isChecked();
 
-        CheckBox checkBoxAnswerTwo = findViewById(R.id.check_box_answer_two);
+        CheckBox checkBoxAnswerTwo = checkBoxTwo;
         boolean checkBoxAnswerSecond = checkBoxAnswerTwo.isChecked();
 
-        CheckBox checkBoxAnswerThree = findViewById(R.id.check_box_answer_three);
+        CheckBox checkBoxAnswerThree = checkBoxThree;
         boolean checkBoxAnswerThird = checkBoxAnswerThree.isChecked();
 
-        RadioButton radioAnswerTwo = findViewById(R.id.radio_answer_two);
+        RadioButton radioAnswerTwo = radioButtonTwo;
         boolean radioButtonAnswerSecond = radioAnswerTwo.isChecked();
 
         EditText editTextAnswerOne = findViewById(R.id.edit_text_answer_one);
         String editTextStringAnswerOne = String.valueOf(editTextAnswerOne.getText());
         boolean editTextAnswerFirst = false;
-        if (editTextStringAnswerOne.equals("2008")) {
+        if (editTextStringAnswerOne.equals(getString(R.string.edit_text_answer_one_correct))) {
             editTextAnswerFirst = true;
         }
 
         EditText editTextAnswerTwo = findViewById(R.id.edit_text_answer_two);
         String editTextStringAnswerTwo = String.valueOf(editTextAnswerTwo.getText());
         boolean editTextAnswerSecond = false;
-        if (editTextStringAnswerTwo.equals("23")) {
+        if (editTextStringAnswerTwo.equals(getString(R.string.edit_text_answer_two_correct))) {
             editTextAnswerSecond = true;
         }
 
@@ -119,13 +119,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * This method checks the right answers and makes a score.
      *
-     * @param checkBoxAnswerOne    is whether or not selected.
-     * @param checkBoxAnswerTwo    is whether or not selected.
-     * @param checkBoxAnswerThree  is whether or not selected.
-     * @param radioAnswerTwo       is whether or not selected.
-     * @param editTextAnswerOne    is whether or not true.
-     * @param editTextAnswerTwo    is whether or not true.
-     * @return                     the total result of the quiz.
+     * @param checkBoxAnswerOne   is whether or not selected.
+     * @param checkBoxAnswerTwo   is whether or not selected.
+     * @param checkBoxAnswerThree is whether or not selected.
+     * @param radioAnswerTwo      is whether or not selected.
+     * @param editTextAnswerOne   is whether or not true.
+     * @param editTextAnswerTwo   is whether or not true.
+     * @return the total result of the quiz.
      */
     public int calculateResult(boolean checkBoxAnswerOne,
                                boolean checkBoxAnswerTwo,
@@ -138,13 +138,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (checkBoxAnswerOne && checkBoxAnswerTwo && !checkBoxAnswerThree) {
             result++;
         }
-        if(radioAnswerTwo) {
+        if (radioAnswerTwo) {
             result++;
         }
-        if(editTextAnswerOne) {
+        if (editTextAnswerOne) {
             result++;
         }
-        if(editTextAnswerTwo) {
+        if (editTextAnswerTwo) {
             result++;
         }
 
@@ -154,28 +154,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * This method displays the total result in a toast message.
      *
-     * @param result    the total number of right answers.
+     * @param result the total number of right answers.
      */
     public void displayResult(int result) {
         if (result == 0) {
-            Toast.makeText(this, getString(R.string.toast_zero_points_first) +
-                    result +
-                    getString(R.string.toast_zero_points_second), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast_zero_points, result), Toast.LENGTH_LONG).show();
         } else if (result == 1) {
-            Toast.makeText(this, getString(R.string.toast_one_point_first) +
-                    result +
-                    getString(R.string.toast_one_point_second), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast_one_point, result), Toast.LENGTH_LONG).show();
         } else if (result == 2) {
-            Toast.makeText(this, getString(R.string.toast_two_points) +
-                    result +
-                    "!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast_two_points, result), Toast.LENGTH_LONG).show();
         } else if (result == 3) {
-            Toast.makeText(this, result +
-                    getString(R.string.toast_three_points), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast_three_points, result), Toast.LENGTH_LONG).show();
         } else if (result == 4) {
-            Toast.makeText(this, getString(R.string.toast_four_points_first) +
-                    result +
-                    getString(R.string.toast_four_points_second), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast_four_points, result), Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Text sizes. -->
-    <dimen name="textsize_big">24dp</dimen>
-    <dimen name="textsize_large">20dp</dimen>
-    <dimen name="textsize_medium">16dp</dimen>
+    <dimen name="textsize_big">24sp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_medium">16sp</dimen>
 
     <!-- Typical spacing between two views. -->
     <dimen name="spacing_normal">14dp</dimen>
