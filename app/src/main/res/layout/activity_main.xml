@@ -68,6 +68,7 @@
             android:layout_marginBottom="@dimen/spacing_small"
             android:layout_marginLeft="@dimen/spacing_normal"
             android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/radio_group_question" />
 
         <RadioGroup
@@ -106,6 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_normal"
             android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/edit_text_first_question" />
 
         <EditText
@@ -124,6 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_normal"
             android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:text="@string/edit_text_second_question" />
 
         <EditText
