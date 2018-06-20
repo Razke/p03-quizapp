@@ -164,15 +164,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @param result    is the total number of right answers.
      */
     public void displayResult(int result) {
-        if (result == 0) {
+        final int NO_POINTS_RESULT = 0;
+        final int TIER_ONE_RESULT = 1;
+        final int TIER_TWO_RESULT = 2;
+        final int TIER_THREE_RESULT = 3;
+        final int TIER_FOUR_RESULT = 4;
+
+        if (result == NO_POINTS_RESULT) {
             Toast.makeText(this, getString(R.string.toast_zero_points, result), Toast.LENGTH_LONG).show();
-        } else if (result == 1) {
+        } else if (result == TIER_ONE_RESULT) {
             Toast.makeText(this, getString(R.string.toast_one_point, result), Toast.LENGTH_LONG).show();
-        } else if (result == 2) {
+        } else if (result == TIER_TWO_RESULT) {
             Toast.makeText(this, getString(R.string.toast_two_points, result), Toast.LENGTH_LONG).show();
-        } else if (result == 3) {
+        } else if (result == TIER_THREE_RESULT) {
             Toast.makeText(this, getString(R.string.toast_three_points, result), Toast.LENGTH_LONG).show();
-        } else if (result == 4) {
+        } else if (result == TIER_FOUR_RESULT) {
             Toast.makeText(this, getString(R.string.toast_four_points, result), Toast.LENGTH_LONG).show();
         }
     }
