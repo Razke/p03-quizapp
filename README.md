@@ -6,19 +6,19 @@
   # About
   Objective: design and implement a short quiz app about some topic you are familiar with.
 
-<img src="https://i.imgur.com/AMER3Yy.png" width="300" height="500">
+<img src="https://i.imgur.com/9DHTDxx.jpg" width="300" height="500">
 
 ## Resources used in this project
-
-* Placeholders
-
-* Placeholders
 
 * [What should be in my .gitignore for an Android Studio project](https://stackoverflow.com/a/17803964/8651044)
 
 * [Common Android Views Cheat Sheet](https://drive.google.com/file/d/0B5XIkMkayHgRMVljUVIyZzNmQUU/view)
 
 * [Layout Cheat Sheet](https://s3.amazonaws.com/video.udacity-data.com/topher/2016/June/576abcfc_layout-cheat-sheet/layout-cheat-sheet.pdf)
+
+* [Style and themes](https://www.tutorialspoint.com/android/android_styles_and_themes.htm)
+
+* [CheckBox and Toasts](https://abhiandroid.com/ui/checkbox)
 
 * [Image Asset Studio](https://developer.android.com/studio/write/image-asset-studio.html)
 
@@ -30,13 +30,19 @@
 
 * [Java Operators](http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/04/shorthand.html)
 
+* [Magic Numbers](https://stackoverflow.com/questions/47882/what-is-a-magic-number-and-why-is-it-bad)
+
 * [Mentor review #1](https://review.udacity.com/#!/reviews/1289497/shared) + [Pastebin link in case I lose the first review after resubmission](https://pastebin.com/Y3zx6ZUB)
 * [Mentor review #2 (resubmission)](https://review.udacity.com/#!/reviews/1290483/shared)
 
-* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI
+* [Android Version History](https://en.wikipedia.org/wiki/Android_version_history)
+
+* [Android OS (Wikipedia)](https://en.wikipedia.org/wiki/Android_(operating_system))
+
+* Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI, WIFI ADB ULTIMATE
 
 ## Reflections
 
-* Placeholder
+* Making this project really showed the fact that I have a lot to learn about Java concepts, how they work and how to use them.
 
 [Back to Top](#table-of-contents)

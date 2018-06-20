@@ -10,7 +10,7 @@
     <string name="check_box_question">Which of the following is true about Android:</string>
     <string name="check_box_first_answer">It is a mobile OS developed by Google.</string>
     <string name="check_box_second_answer">It was intitially developed by Android Inc.</string>
-    <string name="check_box_third_answer">The 4.4 OS version has the code name Snickers.</string>
+    <string name="check_box_third_answer">The 4.4 OS version has the code name Twix.</string>
 
     <!-- RadioGroup question string -->
     <string name="radio_group_question">Which image represents an Android mascot?</string>

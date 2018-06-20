@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-
 /**
  * This app displays questions and gives back a result based on the answers.
  */
@@ -132,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @param radioAnswerTwo      is whether or not selected.
      * @param editTextAnswerOne   is whether or not true.
      * @param editTextAnswerTwo   is whether or not true.
-     * @return                    the total result of the quiz.
+     * @return the total result of the quiz.
      */
     public int calculateResult(boolean checkBoxAnswerOne,
                                boolean checkBoxAnswerTwo,
@@ -161,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * This method displays the total result in a toast message.
      *
-     * @param result    is the total number of right answers.
+     * @param result is the total number of right answers.
      */
     public void displayResult(int result) {
         final int NO_POINTS_RESULT = 0;
