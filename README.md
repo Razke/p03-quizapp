@@ -31,7 +31,7 @@
 * [Java Operators](http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/04/shorthand.html)
 
 * [Mentor review #1](https://review.udacity.com/#!/reviews/1289497/shared) + [Pastebin link in case I lose the first review after resubmission](https://pastebin.com/Y3zx6ZUB)
-* [Mentor review #2 (resubmission)]()
+* [Mentor review #2 (resubmission)](https://review.udacity.com/#!/reviews/1290483/shared)
 
 * Android Studio Plugins: CodeGlance, Key promoter, Markdown Navigator, Material Theme UI
 

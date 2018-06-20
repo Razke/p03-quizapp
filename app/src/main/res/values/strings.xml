@@ -6,7 +6,7 @@
     <!-- Title string. -->
     <string name="title_quiz">Android Quiz</string>
 
-    <!-- CheckBoxes string. -->
+    <!-- CheckBoxes strings. -->
     <string name="check_box_question">Which of the following is true about Android:</string>
     <string name="check_box_first_answer">It is a mobile OS developed by Google.</string>
     <string name="check_box_second_answer">It was intitially developed by Android Inc.</string>
@@ -15,7 +15,7 @@
     <!-- RadioGroup question string -->
     <string name="radio_group_question">Which image represents an Android mascot?</string>
 
-    <!-- EditTexts string. -->
+    <!-- EditTexts strings. -->
     <string name="edit_text_first_question">What was the initial release year of Android 1.0 SDK?</string>
     <string name="edit_text_second_question">What API level does Marshmallow have?</string>
     <string name="edit_text_hint_answer">Answer</string>

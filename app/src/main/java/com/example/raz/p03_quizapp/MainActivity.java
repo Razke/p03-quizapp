@@ -14,8 +14,15 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private CheckBox checkBoxOne, checkBoxTwo, checkBoxThree;
-    private RadioButton radioButtonOne, radioButtonTwo, radioButtonThree;
+    private CheckBox
+            checkBoxOne,
+            checkBoxTwo,
+            checkBoxThree;
+
+    private RadioButton
+            radioButtonOne,
+            radioButtonTwo,
+            radioButtonThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @param radioAnswerTwo      is whether or not selected.
      * @param editTextAnswerOne   is whether or not true.
      * @param editTextAnswerTwo   is whether or not true.
-     * @return the total result of the quiz.
+     * @return                    the total result of the quiz.
      */
     public int calculateResult(boolean checkBoxAnswerOne,
                                boolean checkBoxAnswerTwo,
@@ -154,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * This method displays the total result in a toast message.
      *
-     * @param result the total number of right answers.
+     * @param result    is the total number of right answers.
      */
     public void displayResult(int result) {
         if (result == 0) {
