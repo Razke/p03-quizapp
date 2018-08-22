@@ -7,6 +7,13 @@
   Objective: design and implement a short quiz app about some topic you are familiar with.
 
 <img src="https://i.imgur.com/9DHTDxx.jpg" width="300" height="500">
+    
+This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
+* Planning your app design before coding.
+* Taking an app layout from drawing to XML code.
+* Creating, positioning, and styling views.
+* Creating interactivity through button clicks and Java code.
+* Commenting and documenting your code.
 
 ## Resources used in this project
 
