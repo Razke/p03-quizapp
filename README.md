@@ -1,4 +1,6 @@
 #### Table of Contents
+<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Razke/p03-quizapp/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+
   1. [About](#about)
   2. [Resources used in this project](#resources-used-in-this-project)
   3. [Reflections](#reflections)
